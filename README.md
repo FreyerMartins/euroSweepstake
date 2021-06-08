@@ -1,4 +1,4 @@
 # euroSweepstake
-created a sweepstake code for the euros
+A sweepstake r code for the euros
 
-It assumes that there are 12 players in a 24 team sweepstake. Adapot as necessary.
+It assumes that there are 12 players in a 24 team sweepstake. Adapt as necessary.
