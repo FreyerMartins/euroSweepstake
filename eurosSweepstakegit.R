@@ -3,20 +3,14 @@
 ## Script name: eurosSweepstake
 ##
 ## Purpose of script: 
-## analysis of pilot data
+## 
 ##
-## Author: Duarte F.M.M. Pereira
+## Author: Freyer Martins
 ##
 ## Date Created: 07-06-21
-## Date Modified: 07-06-21
+## Date Modified: 06-02-25
 ##
 ## ---------------------------
-##
-## Notes:
-## 
-##
-## ---------------------------
-## 
 ## dependencies
 list.of.packages <- c("tidyverse")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
@@ -24,10 +18,19 @@ if(length(new.packages)) install.packages(new.packages)
 rm(list.of.packages, new.packages)
 
 ## Creates a list with names to be drawn for the sweepstakes
-names <- c("name1","name2","name3","name4","name5","name6","name7",
-           "name8","name9","name10","name11","name12")
+n_names <- 12
+names <- data.frame()
+names$name <- character()
 
-## Creates a list with the teamms to be drawn for the sweepstakes
+for (i in 1:n_names){
+  
+  names[i,"name"] <- paste("name_",i)
+  
+  
+}
+
+
+## Creates a list with the teams to be drawn for the sweepstakes
 teams <- c("Italy","Austria","Poland","Switzerland","Netherlands",
            "slovakia","Turkey","North Macedonia", "Spain", "Wales",
            "Ukraine","Sweden", "Belgium", "Croatia", "France", 
