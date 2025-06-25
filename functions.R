@@ -77,6 +77,9 @@ combine_lists  <- function(names, teams) {
   
   name_list <- rbind(names,names)
   
+  rows <- sample(nrow(teams))
+  teams <- teams[rows, ]
+  
   sweepStake <- cbind(name_list,teams)
 
 }
