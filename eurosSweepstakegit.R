@@ -22,4 +22,3 @@ sweepStakes <- combine_lists(names,teams)
 
 # generate table ####
 gt::gt(sweepStakes)
-
