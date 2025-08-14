@@ -6,11 +6,11 @@
 
 # dependencies
 source("functions.R")
+source("tests.R")
 
-# get names ####
-n_names  <- 12
+n_names <- contestant_input()
+
 names  <- create_name_list(n_names)
-
 
 # get teams ####
 teams  <- create_teams_list()
