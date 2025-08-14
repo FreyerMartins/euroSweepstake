@@ -83,3 +83,24 @@ combine_lists  <- function(names, teams) {
   sweepStake <- cbind(name_list,teams)
 
 }
+#' contestant_input
+#' 
+#' @description 
+#' combines the various lists
+#'  
+#'
+#' @returns 
+#' @export
+#'
+#' @examples
+contestant_input <- function() {
+
+  input <- readline("What is the number of contestants participating? (whole numbers)") 
+
+  contestant_n <- as.numeric(input)
+
+  is_even(contestant_n)
+
+  return(contestant_n)
+
+} 
